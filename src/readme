@@ -1,0 +1,18 @@
+1. install cython
+	pip install cython
+2. check vcvarsall.bat
+	a. 安装python对应的VS
+		elif msc_ver == '1600':
+             # VS2010 / MSVC 10.0
+        elif msc_ver == '1700':
+           # Visual Studio 2012 / Visual C++ 11.0
+        elif msc_ver == '1800':
+            # Visual Studio 2013 / Visual C++ 12.0
+        elif msc_ver == '1900':
+            # Visual Studio 2015 / Visual C++ 14.0
+    b.安装VC++ Redistributable
+ 3.编写setup.py
+ 4.shell中执行python setup.py build_ext --inplace
+ 5.将生成的test.cp35-win_amd64.pyd 手动将其重命名为test.pyd
+ 
+ ****必须保留文件名一直****
